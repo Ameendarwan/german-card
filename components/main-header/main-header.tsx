@@ -8,12 +8,18 @@ const MainHeader = () => {
     <div className="bg-white py-4 px-4 mt-8">
       <div className="max-w-7xl mx-auto flex justify-between flex-wrap md:flex-row flex-col gap-4 items-center">
         {/* Logo */}
-        <SVGIcon icon="logo" />
+        <SVGIcon icon="logo" aria-label="Company logo" />
 
         {/* Call to Action */}
-        <div className="flex items-center flex-wrap md:flex-row flex-col gap-4 space-x-4">
-          <Button variant="outline">
-            <SVGIcon icon="phone" />
+        <div
+          className="flex items-center flex-wrap md:flex-row flex-col gap-4 space-x-4"
+          aria-label="Call to action section"
+        >
+          <Button
+            variant="outline"
+            aria-label="Call now at +49 (0) 2273 60149 0"
+          >
+            <SVGIcon icon="phone" aria-hidden="true" />
             Call now +49 (0) 2273 60149 0
           </Button>
         </div>

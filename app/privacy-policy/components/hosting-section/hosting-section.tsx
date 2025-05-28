@@ -1,12 +1,12 @@
 const HostingSection = () => {
   return (
-    <section className="mb-12">
+    <section className="mb-12" aria-label="Hosting Information Section">
       <h2 className="text-[44px] mb-6">2. Hosting</h2>
       <p className="text-text leading-relaxed mb-6 font-medium">
         We host the contents of our website with the following provider:
       </p>
 
-      <div className="mb-8">
+      <div className="mb-8 pl-12" aria-label="External hosting details">
         <h3 className="text-2xl mb-4">External hosting</h3>
         <p className="text-text leading-relaxed mb-4 font-medium">
           This website is hosted externally. The personal data collected on this
@@ -35,7 +35,10 @@ const HostingSection = () => {
         <p className="text-text leading-relaxed mb-4">
           We use the following hoster(s):
         </p>
-        <div className="text-text leading-relaxed">
+        <div
+          className="text-text leading-relaxed"
+          aria-label="Hosting provider contact information"
+        >
           <p>Veit Frankfurt</p>
           <p>318 Elmhurst Street - Suite 800</p>
           <p>West Palm Beach, FL 33401</p>

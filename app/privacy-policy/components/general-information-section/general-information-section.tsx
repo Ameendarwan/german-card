@@ -1,6 +1,9 @@
 const GeneralInformationSection = () => {
   return (
-    <section className="mb-12">
+    <section
+      className="mb-12"
+      aria-label="General information and mandatory information section"
+    >
       <h2 className="text-[44px] mb-6">
         3. General information and mandatory information
       </h2>
@@ -8,7 +11,7 @@ const GeneralInformationSection = () => {
         We host the contents of our website with the following provider:
       </p>
 
-      <div className="mb-8">
+      <div className="mb-8 pl-12" aria-label="Data privacy details">
         <h3 className="text-2xl mb-4">Data privacy</h3>
         <p className="text-text leading-relaxed mb-4 font-medium">
           The operators of these pages take the protection of your personal data
@@ -30,20 +33,30 @@ const GeneralInformationSection = () => {
         </p>
       </div>
 
-      <div className="mb-8">
+      <div className="mb-8" aria-label="Responsible authority information">
         <h3 className="text-2xl mb-4">Note on the responsible authority</h3>
         <p className="text-text leading-relaxed mb-4 font-medium">
           The authority responsible for data processing on this website is:
           GERMANCARD Technologies GmbH
         </p>
-        <div className="text-text leading-relaxed mb-4 font-medium">
+        <address className="text-text leading-relaxed mb-4 font-medium not-italic">
           <p>Managing Director & Managing Director Henryk Timme</p>
           <p>Ohmstr. 5</p>
           <p>50170 Kerpen</p>
           <p>Germany</p>
-          <p>Phone: 022736074900</p>
-          <p>E-Mail: office@germancard.de</p>
-        </div>
+          <p>
+            Phone:{" "}
+            <a href="tel:+4922736074900" className="underline">
+              022736074900
+            </a>
+          </p>
+          <p>
+            E-Mail:{" "}
+            <a href="mailto:office@germancard.de" className="underline">
+              office@germancard.de
+            </a>
+          </p>
+        </address>
         <p className="text-text leading-relaxed font-medium">
           The responsible body is the natural or legal person who alone or
           jointly with others is responsible for the purposes and means of

@@ -28,18 +28,24 @@ const Navigation = () => {
     <div key={index}>
       {item.hasDropdown ? (
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex gap-1 items-center text-gray-700 hover:text-gray-900 transition-colors py-2">
-            <span className="font-semibold">{item.label}</span>
-            <SVGIcon icon="chevron" />
+          <DropdownMenuTrigger
+            className="flex gap-1 items-center text-black hover:text-gray-900 transition-colors py-2"
+            aria-label={`${item.label} dropdown menu`}
+          >
+            <span className="font-semibold text-black">{item.label}</span>
+            <SVGIcon icon="chevron" aria-hidden="true" />
           </DropdownMenuTrigger>
-          <DropdownMenuContent>
+          <DropdownMenuContent aria-label={`${item.label} options`}>
             <DropdownMenuItem>Option 1</DropdownMenuItem>
             <DropdownMenuItem>Option 2</DropdownMenuItem>
             <DropdownMenuItem>Option 3</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       ) : (
-        <button className="text-gray-700 hover:text-gray-900 transition-colors py-2">
+        <button
+          className="text-gray-700 hover:text-gray-900 transition-colors py-2"
+          aria-label={item.label}
+        >
           {item.label}
         </button>
       )}
@@ -47,15 +53,21 @@ const Navigation = () => {
   );
 
   return (
-    <div className="bg-white border-gray-200 py-3 px-4">
+    <div className="bg-white border-gray-200 px-4 pb-8">
       <div className="flex flex-wrap justify-between items-center m-auto max-w-7xl">
-        <nav className="flex flex-wrap items-center space-x-4">
+        <nav
+          className="flex flex-wrap items-center space-x-4"
+          aria-label="Left navigation menu"
+        >
           {leftNavItems.map(renderNavItem)}
         </nav>
-        <nav className="flex flex-wrap items-center space-x-4">
+        <nav
+          className="flex flex-wrap items-center space-x-4"
+          aria-label="Right navigation menu"
+        >
           {rightNavItems.map(renderNavItem)}
-          <span className="bg-gray-100 h-[20px] w-[1px]" />
-          <SVGIcon icon="menu" />
+          <span className="bg-gray-100 h-[20px] w-[1px]" aria-hidden="true" />
+          <SVGIcon icon="menu" aria-label="Menu icon" />
         </nav>
       </div>
     </div>

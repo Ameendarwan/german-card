@@ -7,6 +7,8 @@ import PartnersSection from "@/components/partners-section";
 import Footer from "@/components/footer";
 import Topbar from "@/components/topbar";
 
+export const dynamic = "force-static";
+
 const PrivacyPolicy = () => {
   return (
     <div className="flex flex-col w-full min-h-screen">

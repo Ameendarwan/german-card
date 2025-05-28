@@ -13,7 +13,7 @@ This project is a professional business website for GermanCARD, a provider of pl
 ## 🧰 Technologies Used
 
 - **Next.js 15** (App Router, Server Actions, Edge Rendering)
-- **React 18**
+- **React 19**
 - **TypeScript**
 - **Tailwind CSS**
 - **ESLint & Prettier** (Code formatting and linting)

@@ -1,5 +1,6 @@
 import React from "react";
 import SVGIcon from "../svg-icon";
+import { FacebookIcon } from "lucide-react";
 
 const Topbar = () => {
   return (
@@ -10,7 +11,7 @@ const Topbar = () => {
           aria-label="Topbar navigation links"
         >
           {["Company", " Downloads", " Contact us"].map((text, index) => (
-            <div className="flex flex-row gap-2 items-center">
+            <div key={text} className="flex flex-row gap-2 items-center">
               <a
                 key={text}
                 href="#"

@@ -5,7 +5,7 @@ import { FacebookIcon } from "lucide-react";
 const Topbar = () => {
   return (
     <div className="bg-gray-50 px-4 py-2">
-      <div className="max-w-7xl mx-auto flex md:justify-between justify-center flex-wrap items-center text-sm text-gray-200">
+      <div className="max-w-7xl mx-auto max-sm:gap-2 flex md:justify-between justify-center flex-wrap items-center text-sm text-gray-200">
         <div
           className="flex space-x-6 flex-wrap max-sm:justify-center"
           aria-label="Topbar navigation links"
@@ -25,7 +25,7 @@ const Topbar = () => {
           ))}
         </div>
         <div
-          className="flex items-center max-sm:justify-center flex-wrap space-x-4 text-gray-200 text-sm font-medium"
+          className="flex max-sm:gap-2 items-center max-sm:justify-center flex-wrap space-x-4 text-gray-200 text-sm font-medium"
           aria-label="Topbar contact and office hours"
         >
           <span aria-label="Office hours" className="text-gray-200">

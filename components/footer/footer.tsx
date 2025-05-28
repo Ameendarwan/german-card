@@ -160,14 +160,14 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer */}
-      <div className="md:px-24 px-8 py-8 flex justify-between items-center flex-wrap text-sm text-gray-200">
-        <div className="flex md:flex-row flex-col md:gap-4 gap-1">
-          <span className="text-gray-200">
+      <div className="md:px-24 px-8 py-8 flex max-sm:justify-center justify-between items-center flex-wrap text-sm text-gray-200">
+        <div className="flex md:flex-row  flex-col md:gap-4 gap-1">
+          <span className="text-gray-200 max-sm:text-center">
             Copyright © 2024 by GERMANCARD Technologies GmbH
           </span>
           <span className="bg-gray-100 h-[20px] w-[1px] hidden md:inline" />
           <nav
-            className="flex flex-row gap-4 max-sm:my-2"
+            className="flex flex-row max-sm:justify-center gap-4 max-sm:my-2"
             aria-label="Footer legal links"
           >
             <a href="#" className="hover:text-black text-gray-200">
@@ -178,7 +178,7 @@ const Footer = () => {
             </a>
           </nav>
         </div>
-        <div className="flex flex-row items-center gap-2">
+        <div className="flex flex-row items-center max-sm:justify-center gap-2">
           <span>Designed by</span>
           <div className="flex flex-row items-center gap-2 font-medium">
             <span>Starify</span>{" "}
